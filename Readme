@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvendando os Mistérios do Coliseu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+
+        function iniciarDesafio() {
+            // Código da função iniciarDesafio()
+            function lerEntrada(mensagem) {
+                return prompt(mensagem);
+            }
+
+            // Função para exibir mensagem ao usuário
+            function exibirMensagem(mensagem) {
+                alert(mensagem);
+            }
+
+            // Pergunta sobre o tipo de gladiador preferido
+            let tipoGladiador = lerEntrada("Qual tipo de gladiador você mais admira? (retiário, mirmilão, trácio, etc.)");
+            if (tipoGladiador === "retiário") {
+                exibirMensagem("Os retiários eram conhecidos por sua habilidade em manejar a rede e o tridente.");
+            } else if (tipoGladiador === "mirmilão") {
+                exibirMensagem("Os mirmilões eram gladiadores armados com uma espada curta e um escudo.");
+            } else if (tipoGladiador === "trácio") {
+                exibirMensagem("Os trácios eram gladiadores originários da Trácia, com uma armadura característica e armas pesadas.");
+            } else {
+                exibirMensagem("Desculpe, não temos informações sobre esse tipo de gladiador.");
+            }
+
+            // Pergunta sobre o destino do perdedor
+            let destinoPerdedor = lerEntrada("Você acha que o gladiador perdedor era morto na arena? (sim/não)");
+            if (destinoPerdedor === "sim") {
+                exibirMensagem("Na verdade, os gladiadores perdedores não eram sempre mortos. Alguns eram poupados, mas muitos eram de fato executados.");
+            } else if (destinoPerdedor === "não") {
+                exibirMensagem("Correto! Nem todos os gladiadores perdedores eram mortos na arena. Alguns eram poupados.");
+            } else {
+                exibirMensagem("Resposta inválida. Por favor, responda com 'sim' ou 'não'.");
+            }
+
+            // Pergunta sobre a poltrona do Imperador
+            let sentarPoltrona = lerEntrada("Gostaria de sentar na poltrona do Imperador? (sim/não)");
+            if (sentarPoltrona === "sim") {
+                exibirMensagem("A poltrona do Imperador era reservada apenas para ele. Sentar-se nela seria um ato de desrespeito e até mesmo perigoso!");
+            } else if (sentarPoltrona === "não") {
+                exibirMensagem("Uma escolha sábia! A poltrona do Imperador era reservada apenas para ele.");
+            } else {
+                exibirMensagem("Resposta inválida. Por favor, responda com 'sim' ou 'não'.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Desvendando os Mistérios do Coliseu</h2>
+        <p>Bem-vindo ao Coliseu! Por favor, responda algumas perguntas:</p>
+
+        <button onclick="iniciarDesafio()">Iniciar Desafio</button>
+    </div>
+</body>
+</html>
+// copiado!//
